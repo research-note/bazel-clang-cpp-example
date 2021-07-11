@@ -18,18 +18,45 @@ And Testing with [uftrace](https://docs.bazel.build/versions/main/install-ubuntu
 
 ### uftrace
 
-Testring with uftrace in terminal.
+Install in ubuntu uftrace.
+
+```console
+foo@bar:~$ sudo apt -y install valgrind 
+```
+Testing with uftrace in terminal.
 
 ```console
 cpp-tutorial/stage1$ uftrace ./bazel-bin/main/hello-world
 ```
 ### valgrind
 
-Testring with valgrind in terminal.
+Install in ubuntu valgrind.
+
+```console
+foo@bar:~$ sudo apt -y install valgrind 
+```
+Testing with valgrind in terminal.
 
 ```console
 cpp-tutorial/stage1$ valgrind ./bazel-bin/main/hello-world
 ```
+
+## lint
+
+Install [cpplint](https://github.com/cpplint/cpplint).
+
+```console
+foo@bar:~$ sudo apt -y install python3  && pip install cpplint
+foo@bar:~$ .bashrc >> "export PATH=$PATH:$HOME/.local/bin" && source .bashrc
+```
+
+And do lint.
+
+```console
+cpp-tutorial/stage1$ cpplint main/hello-world.cc
+```
+
+# Reference
 
 [Installing Bazel on Ubuntu](https://docs.bazel.build/versions/main/install-ubuntu.html)
 
