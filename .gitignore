@@ -8,3 +8,6 @@ bazel-*
 .settings/
 # Maven
 target/
+
+# tags
+tags
