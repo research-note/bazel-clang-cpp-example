@@ -14,7 +14,7 @@ foo@bar:cpp-tutorial/stage1$ bazel build --config=clang_config  //main:hello-wor
 
 ## Test
 
-Test with [uftrace](https://docs.bazel.build/versions/main/install-ubuntu.html) and [valgrind](https://sourceware.org/git/valgrind.git).
+Test with [uftrace](https://github.com/namhyung/uftrace) and [valgrind](https://sourceware.org/git/valgrind.git).
 
 Install uftrace and valgrind in ubuntu.
 
