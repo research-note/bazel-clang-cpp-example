@@ -1,11 +1,11 @@
 load("@rules_cc//cc:defs.bzl", "cc_binary", "cc_library")
 
 cc_library(
-    name = "Vector",
+    name = "my_vector",
     srcs = [],
     hdrs = [
-        "Vector.h",
-        "Vector.hpp",
+        "MyVector.h",
+        "MyVector.hpp"
     ],
 )
 
@@ -13,6 +13,6 @@ cc_binary(
     name = "template-vector",
     srcs = ["main.cc"],
     deps = [
-        ":Vector",
+        ":my_vector",
     ],
 )
